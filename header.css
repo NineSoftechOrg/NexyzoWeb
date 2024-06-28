@@ -1,0 +1,230 @@
+.top a{
+    background-color: black;
+    
+}
+.main{
+    background-color: black;
+   
+}
+.main li{
+    text-decoration: none;
+}
+.main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items :start;
+    gap: 50px;
+    margin-right: 20px;
+   margin-top: 20px;
+}
+.main ul::before{
+    color: white;
+    text-decoration: none;
+}
+.main ul ::after{
+    color: orange;
+    text-decoration: none;
+}
+.main img{
+    margin-top: 10px;
+}
+.main .cont{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 200px;
+ height: auto;
+ font-size: 20px;
+ 
+}
+.container{
+    display: flex;
+    gap: 100px;
+}
+
+.container-right h4{
+    font-weight: 600;
+    font-size: 24px;
+    color: orangered;
+}
+
+.container-right p{
+    font-weight: 300;
+    font-size: 20px;
+    color: gray;
+}
+.container-right h1{
+    font-weight: 600;
+    font-size: 60px;
+    color: black;
+}
+.container-right h3{
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+}
+.container .img3{
+    height: 200px;
+    margin-top: 1000px;
+}
+.line{
+    border: 1px solid lightgray;
+    width: 1090px;
+    margin-left: 100px;
+}
+.mail {
+   font-size: 25px;
+   align-items: center;
+   justify-content: center;
+   margin-left: 350px;
+}
+.mail span{
+    color: orangered;
+}
+.cont2{
+    position: relative;
+  text-align: center;
+  color: black; 
+  margin-top: 40px;
+}
+
+
+.centered h3{
+    color: orangered;
+    font-weight: 700;
+    font-size: 20px;
+}
+.centered h1{
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.cont2 {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1200px;
+}
+
+.pack {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.c-left, .c-right {
+    width: 48%;
+    position: relative;
+}
+
+.c-left {
+    text-align: left;
+}
+
+.c-right {
+    text-align: left;
+}
+
+.c-left p:first-child, .c-right p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.c-left h2, .c-right h2 {
+    margin: 0.5em 0;
+    font-size: 35px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+
+.c-left p:first-child, .c-right p:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.c-left p:first-child:hover, .c-right p:first-child:hover, .c-left h2:hover, .c-right h2:hover {
+    color: orangered;
+}
+
+.c-left h2, .c-right h2 {
+    margin: 0.5em 0;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.c-left p:last-child, .c-right p:last-child {
+    font-size: 1rem;
+    color: gray;
+}
+
+
+.cont2 img {
+    width: 100%;
+    height: 800px;
+}
+
+.c-left h2::before, .c-right h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 60%; 
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.c-left h2:nth-child(1):hover::before {
+    background-image: url('./images/1.avif');
+    opacity: 1;
+}
+
+.c-right h2:nth-child(1):hover::before {
+    background-image: url('./images/2.webp');
+    opacity: 1;
+}
+
+.c-left h2:nth-child(2):hover::before {
+    background-image: url('./images/3.webp');
+    opacity: 1;
+}
+
+.c-right h2:nth-child(2):hover::before {
+    background-image: url('./images/4.jpg');
+    opacity: 1;
+   
+}
+
+@media (max-width: 768px) {
+    .c-left, .c-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .c-left, .c-right {
+        margin-bottom: 20px;
+    }
+}
+
+
+
