@@ -1,0 +1,122 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+nav.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    height: 69vh;
+    width: 100vw;
+    background-image: url(https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023993.jpg?w=900&t=st=1720554883~exp=1720555483~hmac=3e60b681a35730e1c9e588e16effa4daac4207fb8f79d54d1b0b054308483cfa);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -70px;
+    padding-bottom: 10px;
+}
+
+.hero img {
+    height: 200px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hero h4 {
+    line-height: 1;
+    margin: 0;
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.fadeIn { 
+    animation: fade 20s; 
+}
+
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+
+.mouse {
+	width: 25px;
+	height: 40px;
+	border: 3px solid #333;
+	border-radius: 60px;
+	position: relative;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    opacity: 0.6;
+	&::before {
+		content: '';
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 5px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #333;
+		border-radius: 50%;
+		opacity: 1;
+		animation: wheel 2s infinite;
+		-webkit-animation: wheel 2s infinite;
+	}
+}
+
+.hero p {
+    color: black;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+    bottom: 2%;
+    left: -0.6%;
+    font-size: 60%;
+    opacity: 0.8;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 24px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 24px;
+	}
+}
+
