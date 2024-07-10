@@ -1,122 +1,258 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: "Jost", sans-serif;
-    font-weight: 400;
-    font-style: normal;  
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url("https://expert-themes.com/updated/vitors/wp-content/uploads/2024/02/main-slider-bg-1.jpg");
+}
+
+.center {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  /* left: 20%; */
+  /*     top: 50%; */
+  /*     transform: translate(0%,-50%); */
+}
+
+.imgContainer {
+  overflow: hidden;
+  position: absolute;
+  width: 0%;
+  height: 100%;
+}
+
+.heading {
+  overflow: hidden;
+  height: 200px;
+  width: 520px;
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+.heading h1 {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  top: 100px;
+  font-weight: 600;
+}
+
+.lines {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  position: absolute;
+  /* left: -200px; */
+  z-index: 1;
+}
+
+.line {
+  height: 120px;
+  width: 2px;
+  background-color: #d3d3d3;
+}
+
+.line.active {
+  background-color: #000;
+}
+
+.textContainer {
+  position: absolute;
+  width: 480px;
+  height: 130px;
+  overflow: hidden;
+  padding: 10px;
+  top: 42%;
+  left: 10%;
+  z-index: 3;
+}
+
+.text {
+  position: absolute;
+  top: -100%;
+  color: #fff;
+}
+.imgContainer img {
+  width: 40%;
+  height: 70%;
+  right: 10%;
+  top: 12%;
+  position: absolute;
+}
+.imgContainer::before {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* background: rgba(255,255,255,0.3); */
+}
+
+.icons {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 20px;
+  gap: 20px;
+  right: 6%;
+  bottom: 20%;
+}
+
+.Hamburger {
+  position: absolute;
+  right: 6%;
+  top: 10%;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+  height: 20px;
+  z-index: 4;
+}
+
+.hamburger-line {
+  width: 80%;
+  height: 2px;
+  background: #000;
+}
+
+.hamburger-line:nth-child(3) {
+  width: 60%;
 }
 
 nav.navbar {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .hero {
-    height: 69vh;
-    width: 100vw;
-    background-image: url(https://img.freepik.com/free-vector/realistic-white-monochrome-background_23-2149023993.jpg?w=900&t=st=1720554883~exp=1720555483~hmac=3e60b681a35730e1c9e588e16effa4daac4207fb8f79d54d1b0b054308483cfa);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -70px;
-    padding-bottom: 10px;
+  height: 50vh;
+  width: 100vw;
+  background-image: url(https://img.freepik.com/free-vector/detailed-abstract-white-background_79603-1735.jpg?t=st=1720588378~exp=1720591978~hmac=5e41df0de83129e9119d7a304fed7f3ca149a5b2dc48ae11c8e0052644f9f523&w=900);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-position-y: -100px; */
+  background-position: center center;
+  padding-bottom: 10px;
 }
 
 .hero img {
-    height: 200px;
-    margin: 0;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  height: 200px;
+  margin: 0;
+  position: relative;
+  top: 20%;
+  left: 50%;
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
 }
 
 .hero h4 {
-    line-height: 1;
-    margin: 0;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+  line-height: 1;
+  margin: 0;
+  position: relative;
+  top: 26%;
+  left: 40%;
+  /* -ms-transform: translate(-50%, -50%); */
+  /* transform: translate(-50%, -50%); */
 }
 
-.fadeIn { 
-    animation: fade 20s; 
+.fadeIn {
+  animation: fade 6s;
 }
-
 
 @keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-
 .container {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: flex-end;
-	justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .field {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
 }
 
 .mouse {
-	width: 25px;
-	height: 40px;
-	border: 3px solid #333;
-	border-radius: 60px;
-	position: relative;
-    margin-bottom: 20px;
-    margin-left: -20px;
-    opacity: 0.6;
-	&::before {
-		content: '';
-		width: 10px;
-		height: 10px;
-		position: absolute;
-		top: 5px;
-		left: 50%;
-		transform: translateX(-50%);
-		background-color: #333;
-		border-radius: 50%;
-		opacity: 1;
-		animation: wheel 2s infinite;
-		-webkit-animation: wheel 2s infinite;
-	}
+  width: 25px;
+  height: 40px;
+  border: 3px solid #333;
+  border-radius: 60px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  opacity: 0.6;
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
 }
 
 .hero p {
-    color: black;
-    text-align: center;
-    white-space: nowrap;
-    position: relative;
-    bottom: 2%;
-    left: -0.6%;
-    font-size: 60%;
-    opacity: 0.8;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+  position: relative;
+  bottom: 2%;
+  left: -0.6%;
+  font-size: 60%;
+  opacity: 0.8;
 }
 
 @keyframes wheel {
-	to {
-		opacity: 0;
-		top: 24px;
-	}
+  to {
+    opacity: 0;
+    top: 24px;
+  }
 }
 
 @-webkit-keyframes wheel {
-	to {
-		opacity: 0;
-		top: 24px;
-	}
+  to {
+    opacity: 0;
+    top: 24px;
+  }
 }
-
