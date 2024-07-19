@@ -20,46 +20,52 @@
     </style>
   </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <img src="./assets/images/DOC2.png" alt="" style="width: 70px; height: 70px;">
-          
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="background-color: white;"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 60px;">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
-              </li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+        <img src="./assets/images/Nexyzo-logo-white.png" alt="" style="width: 70px; height: 70px;">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="background-color: white;"></span>
+      </button>
+      <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="aboutus.html">About us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="scroll.html">Custom Software Development</a></li>
+              <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+              <li><a class="dropdown-item" href="#">AI & ML Solutions</a></li>
+              <li><a class="dropdown-item" href="#">ERP & CRM</a></li>
+              <li><a class="dropdown-item" href="#">Resource Augmentation</a></li>
+              <li><a class="dropdown-item" href="#">Digital Merketing</a></li>
+              <li><a class="dropdown-item" href="#">Branding</a></li>
               
-              <li class="nav-item">
-                <a class="nav-link" href="projects.html">Projects</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Pages
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="scroll.html">Home 2</a></li>
-                  <li><a class="dropdown-item" href="#">Project 2</a></li>
-                  
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="aboutus.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
             </ul>
-            <!-- <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Portfolio</a>
+          </li>
+         
+         
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
     <section style="background-color: black;">
         <div data-aos="fade-down"
            data-aos-easing="linear"
@@ -294,6 +300,18 @@
           setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
         </script>
+        <script>
+          $(function() {
+              $(window).on("scroll", function() {
+                  if($(window).scrollTop() > 50) {
+                      $(".navbar").addClass("navactive");
+                  } else {
+                      //remove the background property so it comes transparent again (defined in your css)
+                     $(".navbar").removeClass("navactive");
+                  }
+              });
+          });
+          </script>
         
 </body>
 </html>

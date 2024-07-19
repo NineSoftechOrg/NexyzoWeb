@@ -39,7 +39,7 @@ body {
 
 .heading {
   overflow: hidden;
-  height: 200px;
+  height: 300px;
   width: 520px;
   z-index: 2;
   position: absolute;
@@ -48,7 +48,7 @@ body {
 }
 
 .heading h1 {
-  position: absolute;
+  position: relative;
   font-size: 40px;
   color: #fff;
   top: 100px;
@@ -93,10 +93,10 @@ body {
   color: #fff;
 }
 .imgContainer img {
-  width: 40%;
-  height: 70%;
-  right: 10%;
-  top: 12%;
+  width: 30%;
+  height: 60%;
+  right: 20%;
+  bottom: 15%;
   position: absolute;
 }
 .imgContainer::before {
@@ -142,11 +142,24 @@ body {
   width: 60%;
 }
 
-nav.navbar {
+.navbar {
   margin: 0;
   padding: 0;
 }
 
+li.nav-item {
+    margin: 0 7%;
+    white-space: nowrap;
+    font-weight: 500;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: orangered;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}
 .hero {
   height: 50vh;
   width: 100vw;
