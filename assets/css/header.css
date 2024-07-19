@@ -934,6 +934,7 @@
         justify-content: center;
         margin-left: 30px;
         margin-bottom: 150px;
+        margin-top: 1000px;
      }
      .mail span{
          color: orangered;
@@ -943,6 +944,7 @@
       text-align: center;
       color: black; 
       margin-top: 40px;
+      max-height: 500px;
     }
     .cont3 img{
 
@@ -953,7 +955,7 @@
         display: flex;
         padding: 20px;
         gap: 10px;
-        margin-top: 150px;
+        margin-top: 10px;
     }
 
     .left-side h4{
@@ -1077,6 +1079,33 @@
     .total-cards{
         margin-left: 20px;
     } 
+    .pack {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1300px;
+    }
+    .c-left, .c-right {
+        width: 38%;
+        position: relative;
+       max-height: fit-content;
+    }
+    .c-left h2, .c-right h2 {
+        margin: 0.5em 0;
+        font-size: 25px;
+        font-weight: bolder;
+        cursor: pointer;
+        color: black;
+        transition: color 0.3s ease;
+    }
+    
+    
+    .c-left p:first-child, .c-right p:first-child {
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+        transition: color 0.3s ease;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 1200px){
     .container{

@@ -391,7 +391,9 @@
     margin-left: 30px;
     margin-top: 50px;
 }
-
+.team-bg{
+  background: url('../images/bg3.jpg');
+}
 .case {
     display: flex;
     justify-content: center;
@@ -408,19 +410,22 @@
     font-size: 18px;
     color: #666;
 }
+.oopp{
+  margin: 50px;
+}
 
 .oopp h3{
     color: orangered;
     font-weight: 700;
     font-size: 25px;
     margin-top: 30px;
-    margin-left: 400px;
+   margin-left: 4%;
 }
 .oopp h1{
     font-weight: 600;
     font-size: 40px;
     color: black;
-    margin-left: 400px;
+    margin-left: 4%;
 }
 
 @keyframes slide{

@@ -269,3 +269,118 @@ li.nav-item {
     top: 24px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .hero {
+    height: 50vh;
+    width: 90vw;
+    background-image: url(https://img.freepik.com/free-vector/detailed-abstract-white-background_79603-1735.jpg?t=st=1720588378~exp=1720591978~hmac=5e41df0de83129e9119d7a304fed7f3ca149a5b2dc48ae11c8e0052644f9f523&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position-y: -100px; */
+    background-position: center center;
+    padding-bottom: 10px;
+  }
+  
+  .hero img {
+    height: 200px;
+    margin: 0;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .hero h4 {
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    top: 26%;
+    left: 15%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+  }
+  .mouse {
+    width: 25px;
+    height: 40px;
+    border: 3px solid #333;
+    border-radius: 60px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: -160px;
+    opacity: 0.6;
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 2s infinite;
+      -webkit-animation: wheel 2s infinite;
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+  .hero {
+    height: 50vh;
+    width: 140vw;
+    background-image: url(https://img.freepik.com/free-vector/detailed-abstract-white-background_79603-1735.jpg?t=st=1720588378~exp=1720591978~hmac=5e41df0de83129e9119d7a304fed7f3ca149a5b2dc48ae11c8e0052644f9f523&w=900);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position-y: -100px; */
+    background-position: center center;
+    padding-bottom: 10px;
+  }
+  
+  .hero img {
+    height: 200px;
+    margin: 0;
+    position: relative;
+    top: 20%;
+    left: 45%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+  }
+  
+  .hero h4 {
+    line-height: 1;
+    margin: 0;
+    position: relative;
+    top: 26%;
+    left: 35%;
+    /* -ms-transform: translate(-50%, -50%); */
+    /* transform: translate(-50%, -50%); */
+  }
+  .mouse {
+    width: 25px;
+    height: 40px;
+    border: 3px solid #333;
+    border-radius: 60px;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 190px;
+    opacity: 0.6;
+    &::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheel 2s infinite;
+      -webkit-animation: wheel 2s infinite;
+    }
+  }
+}
