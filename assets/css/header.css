@@ -72,11 +72,15 @@
     margin-left: 100px;
 }
 .mail {
-    background: url('../images/home/4.png');
-   font-size: 25px;
-   align-items: center;
-   justify-content: center;
-   margin-left: 350px;
+    background: url(../images/home/4.png);
+    background-size: cover;
+    font-size: 25px;
+    background-position-y: bottom;
+    min-height: 640px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
 }
 .mail span{
     color: orangered;

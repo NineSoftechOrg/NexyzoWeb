@@ -42,7 +42,7 @@ body {
   height: 300px;
   z-index: 2;
   position: absolute;
-  top: 30%;
+  top: 45%;
   left: 10%;
 }
 
@@ -115,9 +115,12 @@ body {
   font-size: 20px;
   gap: 20px;
   right: 6%;
-  bottom: 20%;
+  bottom: 9%;
 }
-
+.fa-brands, .fab {
+  font-weight: 400;
+  color: black;
+}
 .Hamburger {
   position: absolute;
   right: 6%;
@@ -274,14 +277,15 @@ li.nav-item {
 @media only screen and (max-width: 768px) {
   .hero {
     height: 50vh;
-    width: 90vw;
-    background-image: url(https://img.freepik.com/free-vector/detailed-abstract-white-background_79603-1735.jpg?t=st=1720588378~exp=1720591978~hmac=5e41df0de83129e9119d7a304fed7f3ca149a5b2dc48ae11c8e0052644f9f523&w=900);
+    width: 100vw;
+    background-image: url(https://img.freepik.com/free-vector/detailed-abstract-white-background_79603-1735.jpg?t=st=1720588378~exp=1720591978~hmac=5e41df0…&w=900);
     background-repeat: no-repeat;
-    background-size: cover;
+    text-align: center;
+    background-size: auto;
     background-attachment: fixed;
     /* background-position-y: -100px; */
     background-position: center center;
-    padding-bottom: 10px;
+    padding-bottom: 20%;
   }
   .field {
     display: flex;
@@ -290,6 +294,7 @@ li.nav-item {
     /* width: 300px; */
     bottom: -80%;
     position: relative;
+    margin: 0 auto;
   }
   .hero img {
     height: 200px;
@@ -311,8 +316,8 @@ li.nav-item {
     line-height: 1;
     margin: 0;
     position: relative;
-    top: 26%;
-    left: 15%;
+    top: 25%;
+    text-align: center;
     /* -ms-transform: translate(-50%, -50%); */
     /* transform: translate(-50%, -50%); */
   }
@@ -323,7 +328,7 @@ li.nav-item {
     border-radius: 60px;
     position: relative;
     margin-bottom: 20px;
-    margin-left: -160px;
+    /* margin-left: -160px; */
     opacity: 0.6;
     &::before {
       content: "";
