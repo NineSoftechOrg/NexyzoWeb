@@ -427,6 +427,19 @@
     color: black;
     margin-left: 4%;
 }
+.ooppp h3{
+  color: orangered;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 30px;
+ margin-left: 4%;
+}
+.ooppp h1{
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  margin-left: 4%;
+}
 
 @keyframes slide{
     from{
