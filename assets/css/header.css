@@ -72,12 +72,15 @@
     margin-left: 100px;
 }
 .mail {
-    background: url('../images/home/4.png');
-   font-size: 25px;
-   align-items: center;
-   justify-content: center;
-   margin-left: 350px;
-   color: black;
+    background: url(../images/home/4.png);
+    background-size: cover;
+    font-size: 25px;
+    background-position-y: bottom;
+    min-height: 640px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    margin-left: 350px;
 }
 .mail span{
     color: orangered;
@@ -922,7 +925,7 @@
     }
     .container img {
         width: 200px;
-        height: 120px;
+        height: auto;
         border-radius: 4px;
     }
     .container-right h4{
@@ -952,12 +955,10 @@
         margin-left: 50px;
     }
     .mail {
-        font-size: 15px;
-        align-items: center;
-        justify-content: center;
+        background-image: url(../images/home/4.png);
+        height: 100px;
         margin-left: 30px;
-        margin-bottom: 150px;
-        margin-top: 1000px;
+        display: -webkit-box;
      }
      .mail span{
          color: orangered;
@@ -967,7 +968,7 @@
       text-align: center;
       color: black; 
       margin-top: 40px;
-      max-height: 500px;
+      /* max-height: 500px; */
     }
     .cont3 img{
 
@@ -1106,7 +1107,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-top: 1300px;
+        /* margin-top: 1300px; */
     }
     .c-left, .c-right {
         width: 38%;
