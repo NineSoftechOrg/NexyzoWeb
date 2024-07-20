@@ -3,32 +3,10 @@
 body {
   background-color: #1d1e22;
   color: #ffffff;
-  a {
-    color: #46a049;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #333642;
-  }
 
-  ::selection {
-    background-color: #46a049;
-    color: #ffffff;
-  }
-  .navigation a {
-    color: #ffffff;
-  }
-  .menu-icon {
-    color:#ffffff;
-  }
-  .sticky-navigation {
-    background-color: #1d1e22;
-    a {
-      color: #ffffff;
-    }
-  }
+
   .btn-main {
-    background-color: #46a049;
+    background-color: orangered;
     color: #ffffff;
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   }
@@ -43,42 +21,7 @@ body {
     background-color: #46a049;
     width: 4rem;
   }
-  .header {
-    background-image: url("https://images.unsplash.com/photo-1525863076872-bd16ca4ceef3?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=334&q=80");
-    background-position: 80% 25%;
-    background-repeat: no-repeat;
-    background-size: 640px auto;
-    background-color: #1d1e22;
-    color: #ffffff;
-    .intro-cards {
-      .container {
-        .row {
-          .col-md-4:first-child {
-            .card {
-              background-color: #46a049;
-              .divider-shape {
-                background-color: #1d1e22;
-              }
-            }
-          }
-          .col-md-4 {
-            .card {
-              background-color: #1d1e22;
-              color: #ffffff;
-            }
-            .card:hover {
-              background-color: #46a049;
-              cursor: pointer;
-              transition: background-color 0.4s ease-in;
-              .divider-shape {
-                background-color: #1d1e22;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+ 
   .services {
     background-color: #ffffff;
     color: #1d1e22;
