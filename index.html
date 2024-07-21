@@ -24,6 +24,24 @@
     }
   </style>
    <style>
+  
+
+        .heading1 {
+            position: relative;
+            width: 300px;
+            height: 300px; 
+        }
+
+        .heading1 h1 {
+            position: absolute;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .heading1 h1.active {
+            opacity: 1;
+        }
+
     /* Add your existing styles here */
     .arrow-left:before, .arrow-right:before {
       content: '\25C0'; /* Left and right arrow symbols */
@@ -66,7 +84,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Portfolio</a>
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
           </li>
          
          
@@ -96,11 +114,38 @@
             <div class="line"></div>
         </div> -->
         <!-- sliderHeading -->
-        <div class="heading">
+        <!-- <div class="heading">
              <h1>Next-Gen <br />Software <br />for <br />Modern Enterprises</h1>
              <h1>The Future  <br />of Tech:  <br />Predictions and Perspectives</h1>
              <h1>Revolutionizing <br />Industries through <br />Innovation</h1>
-        </div>
+             <h1>Security <br />at most <br />Priority</h1>
+        </div> -->
+        <div class="heading1">
+          <h1>Next-Gen <br />Software for <br />Modern Enterprises</h1>
+          <h1>The Future of   <br />Tech: Predictions <br />and Perspectives</h1>
+          <h1>Connecting <br />Everything, Everywhere:  <br />The IoT Revolution</h1>
+          <h1>Revolutionizing <br />Industries through <br />Innovation</h1>
+          <h1>Ensuring Cybersecurity <br /> at the most <br />Priority</h1>
+     </div>
+     <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const headings = document.querySelectorAll('.heading1 h1');
+          let currentIndex = 0;
+
+          function showNextHeading() {
+              headings.forEach((heading, index) => {
+                  heading.classList.remove('active');
+                  if (index === currentIndex) {
+                      heading.classList.add('active');
+                  }
+              });
+              currentIndex = (currentIndex + 1) % headings.length;
+          }
+
+          showNextHeading();
+          setInterval(showNextHeading, 2500); // Change text every 3 seconds
+      });
+  </script>
         <!-- slidertext -->
         <!-- <div class="textContainer">
             <div class="text">
@@ -150,9 +195,9 @@
 </div>
 
   <section>
-    <div class="cont2">
+    <div class="cont2 pb-4">
      
-      <div class="centered mb-5">
+      <div class="centered pt-4 mb-4">
 
         <!-- <h3>. : TRUSTED WEB DESIGN SERVICE : .</h3> -->
         <h1>Modern And Intuitive <br> Software Solutions</h1>
@@ -673,7 +718,7 @@ tl
     ease: Expo.easeInOut,
     stagger: 2,
     duration: 2,
-    top: "-200%"
+    top: "-100%"
 },"flag")
 
 
