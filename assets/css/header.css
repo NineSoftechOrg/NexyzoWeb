@@ -91,7 +91,7 @@
   position: relative;
   text-align: center;
   color: black; 
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 
@@ -103,7 +103,7 @@
 .centered h1{
     font-size: 40px;
     font-weight: 600;
-    margin-top: 20px;
+    font-size: 24px;
 }
 
 
@@ -167,6 +167,7 @@
 .c-left h2, .c-right h2 {
     margin: 0.5em 0;
     color: black;
+    font-weight: 600;
     transition: color 0.3s ease;
 }
 
@@ -956,19 +957,27 @@
     }
     .mail {
         background-image: url(../images/home/4.png);
-        height: 100px;
-        margin-left: 30px;
-        display: -webkit-box;
+        height: 220px;
+        margin-left: 0;
+        display: table-cell;
      }
+     .mail p {
+        width: 60%;
+        position: relative;
+        color: black;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .mail p a {
+        text-decoration: none;
+    }
      .mail span{
          color: orangered;
      }
      .cont2{
-        position: relative;
-      text-align: center;
-      color: black; 
-      margin-top: 40px;
-      /* max-height: 500px; */
+       position: relative;
+       text-align: center;
+       color: black; 
     }
     .cont3 img{
 
@@ -1110,8 +1119,7 @@
         /* margin-top: 1300px; */
     }
     .c-left, .c-right {
-        width: 38%;
-        position: relative;
+       position: relative;
        max-height: fit-content;
     }
     .c-left h2, .c-right h2 {
