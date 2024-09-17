@@ -1,15 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- tags for  modules -->
+   <!-- Favicon -->
+   <link href="./modules/img/favicon.ico" rel="icon" />
+
+   <!-- Google Web Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap"
+     rel="stylesheet"
+   />
+
+   <!-- Icon Font Stylesheet -->
+   <link
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+     rel="stylesheet"
+   />
+   <link
+     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+     rel="stylesheet"
+   />
+
+   <!-- Libraries Stylesheet -->
+   <link
+     href="./modules/lib/owlcarousel/assets/owl.carousel.min.css"
+     rel="stylesheet"
+   />
+   <link href="./modules/lib/animate/animate.min.css" rel="stylesheet" />
+
+   <!-- Customized Bootstrap Stylesheet -->
+   <link href="./modules/css/bootstrap.min.css" rel="stylesheet" />
+
+   <!-- Template Stylesheet -->
+   <link href="./modules/css/style.css" rel="stylesheet" />
+  <!-- tags for modules end -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/service.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Nexyzo - Your Trusted Technology Partner</title>
+    <style>
+      .nav-item a:hover{
+        color: orangered;
+      }
+      .nav-item a{
+        color: aliceblue;
+      }
+      .bg-theme{
+        background-color: black !important;
+      }
+    </style>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/2.5.0/remixicon.css">
+     <style>
+         /* Global Styles */
+         body {
+             font-family: 'Roboto', sans-serif;
+             color: #333;
+         }
+ 
+         /* Card Styling */
+         .intro-cards .card {
+             border: none;
+             border-radius: 15px;
+             transition: transform 0.4s ease, box-shadow 0.4s ease;
+             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         }
+ 
+         .intro-cards .card:hover {
+             transform: translateY(-10px);
+             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+         }
+ 
+         .intro-cards .card-body {
+             text-align: center;
+             padding: 30px 20px;
+         }
+ 
+         .intro-cards i {
+             color: #007bff;
+             margin-bottom: 15px;
+         }
+ 
+         .intro-cards h3 {
+             font-size: 1.5rem;
+             font-weight: bold;
+             margin-bottom: 20px;
+             color: #333;
+         }
+ 
+         .intro-cards p {
+             color: #666;
+         }
+ 
+         /* Hover effects for icons */
+         .intro-cards i {
+             transition: color 0.4s ease, transform 0.4s ease;
+         }
+ 
+         .intro-cards .card:hover i {
+             color: #ff4a57;
+             transform: scale(1.1);
+         }
+ 
+         /* Responsive Margin */
+         @media (max-width: 768px) {
+             .intro-cards .card {
+                 margin-bottom: 20px;
+             }
+         }
+     </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-theme">
     <div class="container">
         <img src="./assets/images/Nexyzo-logo-white.png" alt="" style="width: 70px; height: 70px;">
       
@@ -19,33 +131,33 @@
       <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active aria-current="page" href="index.html" style="margin-right: 75px;color: orangered !important;;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="aboutus.html">About us</a>
+            <a class="nav-link " aria-current="page" href="aboutus.html" style="margin-right: 75px;">About us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right: 75px;">
               Services
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="services.html">Custom Software Development</a></li>
-              <li><a class="dropdown-item" href="services.html">Mobile App Development</a></li>
-              <li><a class="dropdown-item" href="services.html">AI & ML Solutions</a></li>
-              <li><a class="dropdown-item" href="services.html">ERP & CRM</a></li>
-              <li><a class="dropdown-item" href="services.html">Resource Augmentation</a></li>
-              <li><a class="dropdown-item" href="services.html">Digital Merketing</a></li>
-              <li><a class="dropdown-item" href="services.html">Branding</a></li>
+            <ul class="dropdown-menu" style="background-color:black!important ;">
+              <li><a class="dropdown-item" href="services.html#section1">Custom Software Development</a></li>
+              <li><a class="dropdown-item" href="services.html#section2">Mobile App Development</a></li>
+              <li><a class="dropdown-item" href="services.html#section3">AI & ML Solutions</a></li>
+              <li><a class="dropdown-item" href="services.html#section4">ERP & CRM</a></li>
+              <li><a class="dropdown-item" href="services.html#section5">Resource Augmentation</a></li>
+              <li><a class="dropdown-item" href="services.html#section6">Digital Marketing</a></li>
+              <li><a class="dropdown-item" href="services.html#section7">Branding</a></li>
               
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            <a class="nav-link" href="portfolio.html" style="margin-right: 75px;">Portfolio</a>
           </li>
          
          
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html" style="margin-right: 75px;">Contact Us</a>
           </li>
         </ul>
         <!-- <form class="d-flex" role="search">
@@ -55,63 +167,175 @@
       </div>
     </div>
   </nav>
+  <!-- dynamic content -->
+  <style>
+    .content { display: none; }
+    .content.active { display: block; }
+</style>
+<script>
+  // Check the hash in the URL (e.g., #section1)
+  function showContentBasedOnHash() {
+      const hash = window.location.hash.substring(1); // Get hash without '#'
+      
+      // Hide all sections
+      document.querySelectorAll('.content').forEach(content => content.classList.remove('active'));
+
+      // Show the relevant section based on the hash
+      if (hash) {
+          const section = document.getElementById(hash);
+          if (section) {
+              section.classList.add('active');
+          }
+      }
+  }
+
+  // Call the function on page load
+  window.addEventListener('load', showContentBasedOnHash);
+
+  // Optionally call this function when the hash changes (for dynamic interactions)
+  window.addEventListener('hashchange', showContentBasedOnHash);
+</script>
       <section class="header" id="header">
         <div class="intro py-md-5 py-4">
-          <div class="container py-md-5 py-4">
+          <div class="container py-md-5 py-4" >
             <div class="row">
-              <div class="col-md">
+              <div class="col-md content" id="section1">
                 <!-- <div class="divider-shape"></div> -->
-                <h1 class="my-5">We are the best at Building brands!</h1>
-                <a href="#" class="btn btn-lg btn-main">Get Started</a>
+                <h1 class="my-5">Custom Software development!</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section2">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">Mobile App Development!</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section3">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">AI & ML Solutions</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section4">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">ERP & CRM</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section5">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">Resource Augmentation</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section6">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">Digital Marketing</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
+              </div>
+              <div class="col-md  content" id="section7">
+                <!-- <div class="divider-shape"></div> -->
+                <h1 class="my-5">Branding</h1>
+                <a href="./contact.html" class="btn btn-lg btn-main">Contact us</a>
               </div>
               <div class="col-md"></div>
             </div>
           </div>
       
         </div>
-        <div class="intro-cards">
+        <!-- dynamic content end -->
+       
+      </section>
+      <!-- introcards -->
+      <section>
+         <!-- introcards -->
+
+         <div class="intro-cards">
           <div class="container">
+              <div class="row">
+                  <div class="col-md-4 mb-md-0 mb-2">
+                      <div class="card shadow-sm">
+                          <div class="card-body">
+                              <i class="ri-bar-chart-grouped-line ri-3x mb-3"></i>
+                              <h3 class="card-title">Analytics</h3>
+                              <p class="card-text">Get detailed insights and analytics to track your performance.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-2">
+                      <div class="card shadow-sm">
+                          <div class="card-body">
+                              <i class="ri-pie-chart-2-fill ri-3x mb-3"></i>
+                              <h3 class="card-title">Data Reports</h3>
+                              <p class="card-text">Create comprehensive reports with our robust data tools.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4 mb-md-0 mb-2">
+                      <div class="card shadow-sm">
+                          <div class="card-body">
+                              <i class="ri-rocket-fill ri-3x mb-3"></i>
+                              <h3 class="card-title">Performance Boost</h3>
+                              <p class="card-text">Experience a significant boost in performance with our solutions.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- introcards end -->
+      </div>
+      
+      </section>
+      <!-- intro cards end -->
+      <!-- corousal section -->
+      <section class="work py-md-5 py-4" id="work">
+        <div class="container py-md-5 py-4">
+          <div class="row">
+            <div class="col-6">
+              <div class="divider-shape"></div>
+              <h2>Our Works</h2>
+              <p>This is how we work.</p>
+            </div>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+              <a href="#" class='btn btn-main'>View All</a>
+            </div>
+          </div>
+          <div>
             <div class="row">
-              <div class="col-md-4 mb-md-0 mb-2">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <i class="ri-bar-chart-grouped-line ri-3x mb-5"></i>
-                    <h3 class="card-title">Card title</h3>
-                    <!-- <div class="divider-shape"></div> -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" style="height:500px"  alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" class="d-block w-100" alt="..." style="height:500px">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="..." style="height:500px">
                   </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
               </div>
-              <div class="col-md-4 mb-md-0 mb-2">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <i class="ri-pie-chart-2-fill ri-3x mb-5"></i>
-                    <h3 class="card-title">Card title</h3>
-                    <!-- <div class="divider-shape"></div> -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-md-0 mb-2">
-                <div class="card shadow-sm">
-                  <div class="card-body">
-                    <i class="ri-rocket-fill ri-3x mb-5"></i>
-                    <h3 class="card-title">Card title</h3>
-                    <!-- <div class="divider-shape"></div> -->
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
       </section>
+      <!-- corousal section end -->
       <section class="services py-md-5 py-4" id="services">
         <div class="container py-md-5 py-4">
           <!-- <div class="divider-shape"></div> -->
           <h2>Services</h2>
           <p>This is the services section</p>
-          <div class="row mt-4">
+          <!-- <div class="row mt-4">
             <div class="col-sm-4">
               <div class="card shadow-sm">
                 <div class="card-body d-flex justify-content-between">
@@ -188,54 +412,356 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        </div>
-      </section>
-      <section class="work py-md-5 py-4" id="work">
-        <div class="container py-md-5 py-4">
-          <div class="row">
-            <div class="col-6">
-              <div class="divider-shape"></div>
-              <h2>Our Works</h2>
-              <p>This is how we work.</p>
-            </div>
-            <div class="col-6 d-flex justify-content-end align-items-center">
-              <a href="#" class='btn btn-main'>View All</a>
-            </div>
-          </div>
-          <div>
-            <div class="row">
-              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
+          </div> -->
+        <!-- service section by ram -->
+        <div class="container-fluid py-2 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="container py-5">
+            <div class="row g-4">
+              <!-- Blog list Start -->
+              <div class="col-12">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <!-- Blog Item 1 -->
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://img.freepik.com/free-photo/digital-marketing-with-icons-business-people_53876-94833.jpg"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Web Design</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Digital Marketing</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1519802772250-a52a9af0eacb?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80" class="d-block w-100" alt="...">
+    
+                  <!-- Repeat the same structure for other blog items -->
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://www.searchenginejournal.com/wp-content/uploads/2021/09/16-reasons-why-social-media-is-important-to-your-company-616d3200e6dc6-sej.png"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Social Media</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Social Media</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="d-block w-100" alt="...">
+    
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://lh4.googleusercontent.com/proxy/Gck4Ib2dM133dsQBcKRtkGEmj9szUwrk4E2sS1q18Q2nPKhZmMHV3tOfcMt8GgCsXpgC2u5KBqAvQQdpW440_cHX2LRLIoEN7U5RbLVa9BBgth2N"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >SEO</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">SEO</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
                   </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="./modules/img/blog-1.jpg"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Paid Advertisement</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Paid Advertisement</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://optinmonster.com/wp-content/uploads/2016/06/emailmarketingguide.png"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Email Marketing</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Email Marketing</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://miro.medium.com/v2/resize:fit:576/0*mV5NJzuRpDIIr1fR.png"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Web Design</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Conversion Optimization</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://www.searchenginejournal.com/wp-content/uploads/2020/10/a-beginners-guide-to-reputation-management-seo-5f9c0c488ad57.png"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Web Design</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Reputation Management</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://apacentrepreneur.com/wp-content/uploads/2020/06/Why-Influencer-Marketing-is-an-Important-Part-of-Today.jpg"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Web Design</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Influencer Marketing</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col wow slideInUp" data-wow-delay="0.1s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                      <div class="blog-img position-relative overflow-hidden">
+                        <img
+                          class="img-fluid"
+                          src="https://s3.amazonaws.com/omiweb/wp-content/uploads/2017/06/23111438/fbinfographic.jpg"
+                          alt=""
+                        />
+                        <!-- <a
+                          class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4"
+                          href=""
+                          >Web Design</a
+                        > -->
+                      </div>
+                      <div class="p-4">
+                        <!-- <div class="d-flex mb-3">
+                          <small class="me-3"
+                            ><i class="far fa-user text-primary me-2"></i>John
+                            Doe</small
+                          >
+                          <small
+                            ><i class="far fa-calendar-alt text-primary me-2"></i>01
+                            Jan, 2045</small
+                          >
+                        </div> -->
+                        <h4 class="mb-3">Facebook Marketing</h4>
+                        <p>
+                          Dolor et eos labore stet justo sed est sed sed sed dolor
+                          stet amet
+                        </p>
+                        <a class="text-uppercase" href=""
+                          >Read More <i class="bi bi-arrow-right"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <!-- Add more items as needed -->
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </a>
               </div>
+              <!-- Blog list End -->
             </div>
           </div>
         </div>
+
+        <!-- service section by ram end -->
+        </div>
+        </div>
       </section>
+    
       <section class="about py-md-5 py-4" id="about">
         <div class="container py-md-5 py-4">
           <div class="row">
@@ -323,14 +849,6 @@
           </div>
         </div>
       </section>
-      
-      
-
-
-
-
-
-
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -375,5 +893,21 @@ $(function () {
 });
 </script>
 
+<script>
+
+</script>
+<!-- script for modules -->
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./modules/lib/wow/wow.min.js"></script>
+<script src="./modules/lib/easing/easing.min.js"></script>
+<script src="./modules/lib/waypoints/waypoints.min.js"></script>
+<script src="./modules/lib/counterup/counterup.min.js"></script>
+<script src="./modules/lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="./modules/js/main.js"></script>
+<!-- script for modules end -->
 </body>
 </html>
