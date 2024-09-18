@@ -1,9 +1,6 @@
-
-
 body {
   background-color: #1d1e22;
   color: #ffffff;
-
 
   .btn-main {
     background-color: orangered;
@@ -11,7 +8,7 @@ body {
     box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.15);
   }
   .btn-main:hover {
-    background-color: #333642 ;
+    background-color: white;
   }
   .divider-shape {
     height: 0;
@@ -21,7 +18,7 @@ body {
     background-color: #46a049;
     width: 4rem;
   }
- 
+
   .services {
     background-color: #ffffff;
     color: #1d1e22;
@@ -137,7 +134,7 @@ body {
       .row {
         .col-sm-4 {
           .card {
-            background-color:#46a049;
+            background-color: #46a049;
           }
           .card:hover {
             color: #1d1e22;

@@ -1,6 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 /* ram code */
+
+/* tech stack for mobile */
+@media (max-width: 480px) {
+  .tech-tack-mbl {
+    margin-left: 0 !important;
+    font-size: 30px !important;
+  }
+}
+
+/* our services for mobile */
+@media (max-width: 478px) {
+  .mbl {
+    margin-top: 0 !important;
+    padding-top: 30px !important;
+  }
+}
+
+/* our services end by ram */
 /* contact us by ram */
 .contact-us-background {
   background-image: url("../images/home/4.png");
@@ -16,6 +34,9 @@
 /* contact us by ram */
 .navclr a {
   color: white !important;
+}
+.navanchr:hover {
+  color: #000 !important;
 }
 /* corousal projects section by ram */
 

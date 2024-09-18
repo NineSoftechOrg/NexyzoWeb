@@ -237,17 +237,17 @@ body {
             <a class="nav-link nav-color" aria-current="page" href="aboutus.html">About us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-color  " href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle nav-color" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Services
             </a>
-            <ul class="dropdown-menu" style="background-color: orangered;color:white !important;">
-              <li style="color: white !important;"><a class="dropdown-item" href="services.html#section1">Custom Software Development</a></li>
-              <li><a class="dropdown-item" href="services.html#section2">Mobile App Development</a></li>
-              <li><a class="dropdown-item" href="services.html#section3">AI & ML Solutions</a></li>
-              <li><a class="dropdown-item" href="services.html#section4">ERP & CRM</a></li>
-              <li><a class="dropdown-item" href="services.html#section5">Resource Augmentation</a></li>
-              <li><a class="dropdown-item" href="services.html#section6">Digital Marketing</a></li>
-              <li><a class="dropdown-item" href="services.html#section7">Branding</a></li>
+            <ul class="dropdown-menu" style="background-color: orangered;color:black !important;">
+              <li style="color: white !important;"><a class="dropdown-item navanchr" href="services.html#section1">Custom Software Development</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section2">Mobile App Development</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section3">AI & ML Solutions</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section4">ERP & CRM</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section5">Resource Augmentation</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section6">Digital Marketing</a></li>
+              <li><a class="dropdown-item navanchr" href="services.html#section7">Branding</a></li>
               
             </ul>
           </li>
@@ -385,7 +385,7 @@ body {
       </div>
     </div> -->
     <!-- landing page corousal -->
-    <div class="carousel" style="margin-top: 70px;">
+    <div class="carousel" style="margin-top: 70px;height: 100vh; ">
       <!-- list item -->
       <div class="list">
           <div class="item">
@@ -736,18 +736,18 @@ body {
     //       'https://24vs.io/wp-content/uploads/2021/03/Slide4.jpeg',
     //       'https://cdn.prod.website-files.com/61845f7929f5aa517ebab941/6440f9477c2a321f0dd6ab61_How%20Artificial%20Intelligence%20(AI)%20Is%20Used%20In%20Biometrics.jpg'
     //   ];
-  const images=[
+  // const images=[
     
-    'https://www.pngkey.com/png/full/96-967577_ai-artificial-intelligence-transparent-background.png',
-    'https://static.vecteezy.com/system/resources/thumbnails/022/587/498/small/technology-ai-artificial-intelligence-ship-in-brain-hi-tech-smart-brain-free-png.png',
-    'https://png.pngtree.com/png-vector/20240321/ourmid/pngtree-ai-robot-thinking-3d-pic-png-image_12182205.png'
-  ]
-    let currentIndex = 0;
+  //   'https://www.pngkey.com/png/full/96-967577_ai-artificial-intelligence-transparent-background.png',
+  //   'https://static.vecteezy.com/system/resources/thumbnails/022/587/498/small/technology-ai-artificial-intelligence-ship-in-brain-hi-tech-smart-brain-free-png.png',
+  //   'https://png.pngtree.com/png-vector/20240321/ourmid/pngtree-ai-robot-thinking-3d-pic-png-image_12182205.png'
+  // ]
+  //   let currentIndex = 0;
   
-    function changeBackgroundImage() {
-      const container = document.getElementById('imgMain');
-      currentIndex = (currentIndex + 1) % images.length;
-      container.src=images[currentIndex]
+  //   function changeBackgroundImage() {
+  //     const container = document.getElementById('imgMain');
+  //     currentIndex = (currentIndex + 1) % images.length;
+  //     container.src=images[currentIndex]
       // container.style.backgroundImage = `url(${images[currentIndex]})`;
       // container.style.backgroundPosition = 'center';
       // container.style.backgroundRepeat = 'no-repeat';
@@ -757,10 +757,10 @@ body {
   // background-attachment: fixed;
   // background-position: center;
 
-    }
-    setInterval(changeBackgroundImage,5000)
+  //   }
+  //   setInterval(changeBackgroundImage,5000)
   
-  </script>
+  // </script>
   
     <!-- ram code end -->
 
@@ -783,7 +783,7 @@ body {
       
     </div>
 </div>
-<!-- our services section -->
+<!-- why choose us section -->
 
 <section>
   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: white;">
@@ -800,28 +800,26 @@ body {
           <div class="row g-5">
             <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
               <div
-                class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style="width: 60px; height: 60px"
               >
                 <i class="fa fa-cubes text-white"></i>
               </div>
               <h4>Best In Industry</h4>
               <p class="mb-0">
-                Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et
-                diam dolor
+                Leading the software industry with innovative solutions and exceptional quality.
               </p>
             </div>
             <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
               <div
-                class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style="width: 60px; height: 60px"
               >
                 <i class="fa fa-award text-white"></i>
               </div>
               <h4>Award Winning</h4>
               <p class="mb-0">
-                Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et
-                diam dolor
+                Recognized globally for excellence and innovation in software development.
               </p>
             </div>
           </div>
@@ -844,28 +842,26 @@ body {
           <div class="row g-5">
             <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
               <div
-                class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style="width: 60px; height: 60px"
               >
                 <i class="fa fa-users-cog text-white"></i>
               </div>
               <h4>Professional Staff</h4>
               <p class="mb-0">
-                Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et
-                diam dolor
+                Experienced and dedicated team delivering top-notch software solutions.
               </p>
             </div>
             <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
               <div
-                class="bg-primary rounded d-flex align-items-center justify-content-center mb-3"
+                class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3"
                 style="width: 60px; height: 60px"
               >
                 <i class="fa fa-phone-alt text-white"></i>
               </div>
               <h4>24/7 Support</h4>
               <p class="mb-0">
-                Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et
-                diam dolor
+                Round-the-clock assistance to ensure uninterrupted service and support.
               </p>
             </div>
           </div>
@@ -874,108 +870,102 @@ body {
     </div>
   </div>
 </section>  
-  <!-- our services section end -->
-  <!-- why choose us section -->
-  <section>
-    <!-- features section by ram -->
-    <div>
-      <div class="features-container">
-        <h2>Our Services</h2>
-        <div class="features-grid">
-          <!-- Custom Software Development -->
-          <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Custom Software Development</h3>
-            <p>We build tailor-made software solutions to meet your specific business needs, ensuring scalability and efficiency.</p>
-            <a href="./services.html">Learn More</a>
-          </div>
+  <!-- why choose us  section end -->
+<!-- Our Services section by ram -->
+
+ <section>
+<div>
+  <div class="features-container mbl">
+    <h2>Our Services</h2>
+    <div class="features-grid">
+      <!-- Custom Software Development -->
+      <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Custom Software Development</h3>
+        <p>We build tailor-made software solutions to meet your specific business needs, ensuring scalability and efficiency.</p>
+        <a href="./services.html">Learn More</a>
+      </div>
+  
+      <!-- Cloud Solutions -->
+      <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <h3>Cloud Solutions</h3>
+        <p>Leverage the power of cloud computing to streamline operations, reduce costs, and enhance data security.</p>
+        <a href="./services.html">Learn More</a>
+      </div>
+  
+      <!-- Mobile App Development -->
+      <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Mobile App Development</h3>
+        <p>Design and develop innovative mobile apps that drive user engagement and business growth on iOS and Android platforms.</p>
+        <a href="./services.html">Learn More</a>
+      </div>
+  
+      <!-- Cybersecurity Solutions -->
       
-          <!-- Cloud Solutions -->
-          <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-cloud"></i>
-            </div>
-            <h3>Cloud Solutions</h3>
-            <p>Leverage the power of cloud computing to streamline operations, reduce costs, and enhance data security.</p>
-            <a href="./services.html">Learn More</a>
-          </div>
-      
-          <!-- Mobile App Development -->
-          <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-mobile-alt"></i>
-            </div>
-            <h3>Mobile App Development</h3>
-            <p>Design and develop innovative mobile apps that drive user engagement and business growth on iOS and Android platforms.</p>
-            <a href="./services.html">Learn More</a>
-          </div>
-      
-          <!-- Cybersecurity Solutions -->
-          
-          <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-shield-alt"></i>
-            </div>
-            <h3>Cybersecurity Solutions</h3>
-            <p>Protect your business from cyber threats with advanced security protocols and proactive monitoring.</p>
-            <a href="./services.html">Learn More</a>
-          </div>
-      
-          <!-- Data Analytics -->
-          <!-- <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-chart-bar"></i>
-            </div>
-            <h3>Data Analytics & AI</h3>
-            <p>Turn data into actionable insights with our comprehensive analytics services, powered by AI and machine learning.</p>
-            <a href="#">Learn More</a>
-          </div> -->
-      
-          <!-- IT Consulting -->
-          <!-- <div class="feature-card">
-            <div class="icon">
-              <i class="fas fa-lightbulb"></i>
-            </div>
-            <h3>IT Consulting</h3>
-            <p>Our experts provide strategic IT guidance to help businesses maximize technology investments and stay competitive.</p>
-            <a href="#">Learn More</a>
-          </div> -->
-          <!-- DevOps Services -->
+      <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h3>Cybersecurity Solutions</h3>
+        <p>Protect your business from cyber threats with advanced security protocols and proactive monitoring.</p>
+        <a href="./services.html">Learn More</a>
+      </div>
+  
+      <!-- Data Analytics -->
+      <!-- <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-chart-bar"></i>
+        </div>
+        <h3>Data Analytics & AI</h3>
+        <p>Turn data into actionable insights with our comprehensive analytics services, powered by AI and machine learning.</p>
+        <a href="#">Learn More</a>
+      </div> -->
+  
+      <!-- IT Consulting -->
+      <!-- <div class="feature-card">
+        <div class="icon">
+          <i class="fas fa-lightbulb"></i>
+        </div>
+        <h3>IT Consulting</h3>
+        <p>Our experts provide strategic IT guidance to help businesses maximize technology investments and stay competitive.</p>
+        <a href="#">Learn More</a>
+      </div> -->
+      <!-- DevOps Services -->
 <!-- <div class="feature-card">
-  <div class="icon">
-    <i class="fas fa-sync-alt"></i>
-  </div>
-  <h3>DevOps Services</h3>
-  <p>Streamline your software development process with our DevOps solutions, enabling continuous integration and faster delivery.</p>
-  <a href="#">Learn More</a>
+<div class="icon">
+<i class="fas fa-sync-alt"></i>
+</div>
+<h3>DevOps Services</h3>
+<p>Streamline your software development process with our DevOps solutions, enabling continuous integration and faster delivery.</p>
+<a href="#">Learn More</a>
 </div> -->
 
 <!-- UX/UI Design -->
 <!-- <div class="feature-card">
-  <div class="icon">
-    <i class="fas fa-pencil-ruler"></i>
-  </div>
-  <h3>UX/UI Design</h3>
-  <p>Create engaging and user-friendly interfaces with our expert UX/UI design services to enhance customer satisfaction.</p>
-  <a href="#">Learn More</a>
+<div class="icon">
+<i class="fas fa-pencil-ruler"></i>
+</div>
+<h3>UX/UI Design</h3>
+<p>Create engaging and user-friendly interfaces with our expert UX/UI design services to enhance customer satisfaction.</p>
+<a href="#">Learn More</a>
 </div> -->
-        </div>
-      </div>
     </div>
-    <!-- features section end by ram -->
+  </div>
+</div>
+ </section>
+<!-- Our Services  section end by ram -->
+
     <!-- modern and innovative section -->
-    <style>
-      /* .add-border{
-        border-color: black;
-        border-width: 2px;
-        border-style: double;
-        border-radius: 2px;
-        margin: 5px;
-        padding: 5px;
-      } */
-    </style>
+
+  <section>
     <div class="cont2 pb-4">
      
       <div class="centered pt-4 mb-4">
@@ -988,81 +978,71 @@ body {
             <i class="fas fa-laptop-code fa-3x" style="color:orangered ;"></i>
 
             <h2>Custom Software Development</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Custom software development provides personalized, scalable, and efficient solutions designed to meet your specific business goals, streamline operations, and enhance overall performance.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv2">
             <!-- <p>02</p> -->
             <i class="fas fa-mobile-alt  fa-3x" style="color:orangered ;"></i>
 
 
-            <h2>Mobile Applications            </h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <h2>Mobile Applications</h2>
+            <p>Mobile applications deliver seamless, on-the-go access to your services, empowering users with intuitive interfaces and enhanced functionality tailored to their needs.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv3">
             <!-- <p>03</p> -->
             <i class="fas fa-shopping-cart  fa-3x" style="color:orangered ;"></i>
 
             <h2>E-commerce</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>E-commerce solutions streamline the shopping experience, enabling businesses to reach a global audience with secure, scalable platforms that drive sales and customer engagement.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv4">
             <!-- <p>04</p> -->
             <i class="fas fa-users  fa-3x" style="color:orangered ;"></i>
 
             <h2>ERP/CRM</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Transform your business with our tailored ERP/CRM solutions, designed to streamline operations, enhance customer relationships, and drive growth with powerful, scalable features.</p>
           </div>
           <div class="c-left add-border fa-3x" id="hoverDiv5">
             <!-- <p>05</p> -->
             <i class="fas fa-brain" style="color:orangered ;"></i>
 
             <h2>AI & ML</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Unlock new possibilities with our AI & ML solutions, leveraging cutting-edge technology to drive innovation, optimize processes, and gain actionable insights for strategic decision-making.</p>
           </div>
           <div class="c-right add-border fa-3x" id="hoverDiv6">
             <!-- <p>06</p> -->
             <i class="fas fa-flag" style="color:orangered ;"></i>
 
             <h2>Branding Solutions</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Elevate your brand with our comprehensive branding solutions, designed to create a strong identity, engage your audience, and drive lasting impact through strategic design and messaging.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv7">
             <!-- <p>07</p> -->
             <i class="fas fa-cube fa-3x" style="color:orangered ;"></i>
 
             <h2>Blockchain</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Revolutionize your business with our blockchain solutions, offering secure, transparent, and efficient transactions while enhancing trust and integrity across your digital operations.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv8">
             <!-- <p>08</p> -->
             <i class="fas fa-vr-cardboard fa-3x" style="color:orangered ;"></i>
 
             <h2>Metaverse</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Step into the future with our Metaverse solutions, creating immersive virtual experiences that transform how you connect, collaborate, and engage in a digital world.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv9">
             <!-- <p>09</p> -->
             <i class="fas fa-cogs  fa-3x" style="color:orangered ;"></i>
 
             <h2>Industrial Automation</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Enhance efficiency and productivity with our industrial automation solutions, designed to streamline operations, reduce downtime, and drive innovation through advanced technology and intelligent systems.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv10">
             <!-- <p>10</p> -->
             <i class="fas fa-users fa-3x" style="color:orangered ;"></i>
 
             <h2>Staff Augmentation</h2>
-            <p>The Challenge Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-              ut et voluptates repudiandae sint…</p>
+            <p>Boost your team's capabilities with our staff augmentation services, providing skilled professionals who seamlessly integrate into your projects to deliver expertise, accelerate timelines, and achieve your business goals.</p>
           </div>
         </div>
       </div>
@@ -1095,7 +1075,9 @@ body {
         });
     });
 </script>
-  <!-- why choose us section end -->
+  <!-- modern and innovative section end -->
+  
+  
   <!-- <section class="p-5">
     <div class="container">
       <img src="./assets/images/about-1.jpg" alt="" class="img1">
@@ -1123,13 +1105,14 @@ body {
 
 
 
-
+<!-- image section -->
   <section class="hero fadeIn" id="">
     <img src="https://nexyzo.com/wp-content/uploads/2023/04/Nexyzo_logo_Variants_Final-01-removebg-preview-1.png" />
 
     <h4>YOUR TRUSTED TECHNOLOGY PARTNER</h4>
 
   </section>
+  <!-- image section end -->
   <!-- <section>
 
     <div class="cont3">
@@ -1466,7 +1449,7 @@ body {
   </div> -->
 
 <!-- testimonial-section by ram -->
-
+<section>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color:white ;">
   <div class="container py-5">
       <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
@@ -1478,54 +1461,54 @@ body {
               <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img class="img-fluid rounded" src="./modules/img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
                   <div class="ps-4">
-                      <h4 class="text-primary mb-1">Client Name</h4>
-                      <small class="text-uppercase">Profession</small>
+                      <h4 class="text-primary mb-1">Sarah Johnson</h4>
+                      <small class="text-uppercase">Product Manager</small>
                   </div>
               </div>
               <div class="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                The staff augmentation services provided were exceptional. The skilled professionals seamlessly integrated into our team, bringing valuable expertise and accelerating our project timelines. Highly recommended!  
               </div>
           </div>
           <div class="testimonial-item bg-light my-4">
               <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img class="img-fluid rounded" src="./modules/img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
                   <div class="ps-4">
-                      <h4 class="text-primary mb-1">Client Name</h4>
-                      <small class="text-uppercase">Profession</small>
+                      <h4 class="text-primary mb-1">Michael Lee</h4>
+                      <small class="text-uppercase"> CTO</small>
                   </div>
               </div>
               <div class="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                Their industrial automation solutions transformed our operations, significantly boosting efficiency and reducing downtime. The impact on our productivity has been remarkable.                  
               </div>
           </div>
           <div class="testimonial-item bg-light my-4">
               <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img class="img-fluid rounded" src="./modules/img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
                   <div class="ps-4">
-                      <h4 class="text-primary mb-1">Client Name</h4>
-                      <small class="text-uppercase">Profession</small>
+                      <h4 class="text-primary mb-1">Emily Davis</h4>
+                      <small class="text-uppercase">Marketing Director</small>
                   </div>
               </div>
               <div class="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                The branding solutions offered were exactly what we needed to revitalize our brand. The strategic design and messaging have truly elevated our market presence.                  
               </div>
           </div>
           <div class="testimonial-item bg-light my-4">
               <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                   <img class="img-fluid rounded" src="./modules/img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
                   <div class="ps-4">
-                      <h4 class="text-primary mb-1">Client Name</h4>
-                      <small class="text-uppercase">Profession</small>
+                      <h4 class="text-primary mb-1">Juliet</h4>
+                      <small class="text-uppercase"> CEO</small>
                   </div>
               </div>
               <div class="pt-4 pb-5 px-5">
-                  Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
+                The AI & ML solutions provided have unlocked new opportunities for our business. The actionable insights and optimized processes have been game changers for our strategic planning.                
               </div>
           </div>
       </div>
   </div>
 </div>
-
+</section>
 <!-- testimonial-section end by ram  -->
   <!-- <section class="testimonial-section">
 		<div class="large-container">
@@ -1719,7 +1702,7 @@ body {
       </div>
     </div>
   </section> -->
-
+<!-- footer start -->
   <div class="d-flex flex-row h-70">
     <footer class="w-100 py-4 flex-shrink-0 custom-footer" >
       <div class="container py-4">
@@ -1727,15 +1710,14 @@ body {
           <div class="col-lg-4 col-md-6" style="color: white;">
             <!-- <h5 class="h1 text-white">FB.</h5> -->
             <img src="./assets/images/Nexyzo-logo-white.png" alt="" style="width: 80px;">
-            <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
+            <p class="small text-muted">Empowering innovation through technology and design. Connect with us to explore tailored solutions that drive growth and efficiency.</p>
             <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary"
                 href="#">Bootstrapious.com</a></p>
           </div>
           <div class="col-lg-4 col-md-6">
             <h5 class="text-white mb-3">Newsletter</h5>
-            <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt.</p>
+            <p class="small text-muted">Stay Updated with Our Latest News! <br>
+              Sign up for our newsletter to receive exclusive updates, insights, and special offers directly to your inbox.</p>
             <form action="#">
               <div class="input-group mb-3">
                 <input class="form-control" type="text" placeholder="Recipient's username"
@@ -1777,11 +1759,11 @@ body {
                       class="">info@yourdomain.com</span></a></li>
               </ul>
             </div>
-            <div class="social-icons">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <div class="social-icons" style="padding-left: 40px;">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f" style="color:white ;"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin-in" style="color:white ;"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter" style="color:white ;"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram" style="color:white ;"></i></a>
             </div>
           </div>
 
