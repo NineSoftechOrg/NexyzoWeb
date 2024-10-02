@@ -82,13 +82,13 @@
   
 
         .heading1 {
-            position: relative;
+            /* position: relative; */
             width: 300px;
             height: 300px; 
         }
 
         .heading1 h1 {
-            position: absolute;
+            /* position: absolute; */
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
         }
@@ -117,7 +117,7 @@ body {
 }
 
 .my-carousel-container {
-  position: relative;
+  /* position: relative; */
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
@@ -217,175 +217,80 @@ body {
 }
 
    </style>
+<style>
+.nav-color {
+    color: white !important;
+}
+.nav-color:hover {
+    color: orangered !important;
+}
+.navbar {
+ 
+    width: 100%;
+    z-index: 1000000; /* Ensure it's on top of other elements */
+}
+
+.section2 {
+    padding-top: 50px; /* Adjust based on navbar height */
+}
+
+</style>
+
 </head>
 
 <body>
-  <!-- nabar  start-->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important;">
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+<!-- navbar start -->
+<div>
+  <nav class="navbar navbar-expand-lg" style="background-color: black !important;position: static !important;">
     <div class="container">
-        <img src="./assets/images/Nexyzo-logo-white.png" alt="" style="width: 70px; height: 70px;">
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" style="background-color: white;"></span>
-      </button>
-      <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-color" aria-current="page" href="aboutus.html">About us</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle nav-color" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu" style="background-color: orangered;color:black !important;">
-              <li style="color: white !important;"><a class="dropdown-item navanchr" href="services.html#section1">Custom Software Development</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section2">Mobile App Development</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section3">AI & ML Solutions</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section4">ERP & CRM</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section5">Resource Augmentation</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section6">Digital Marketing</a></li>
-              <li><a class="dropdown-item navanchr" href="services.html#section7">Branding</a></li>
-              
+        <img src="./assets/images/Nexyzo-logo-white.png" alt="Logo" style="width: 70px; height: 70px;">
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: white !important;"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse offset-2" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-color" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" style="background-color: orangered;">
+                        <li><a class="dropdown-item navanchr" href="services.html#section1">Custom Software Development</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section2">Mobile App Development</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section3">AI & ML Solutions</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section4">ERP & CRM</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section5">Resource Augmentation</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section6">Digital Marketing</a></li>
+                        <li><a class="dropdown-item navanchr" href="services.html#section7">Branding</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-color" href="contact.html">Contact Us</a>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-color" href="portfolio.html">Portfolio</a>
-          </li>
-         
-         
-          <li class="nav-item">
-            <a class="nav-link nav-color" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <!-- <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-      </div>
+        </div>
     </div>
-  </nav>
-  
+</nav>
+</div>  
 <!-- navbar end -->
-  <div class="main" >
-    <!-- <div class="Hamburger">
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-        <div class="hamburger-line"></div>
-    </div> -->
-    <div class="center" id="" style="background-color: white;">
-        <!-- Slider indicator -->
-        <!-- <div class="lines">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div> -->
-        <!-- sliderHeading -->
-        <!-- <div class="heading">
-             <h1>Next-Gen <br />Software <br />for <br />Modern Enterprises</h1>
-             <h1>The Future  <br />of Tech:  <br />Predictions and Perspectives</h1>
-             <h1>Revolutionizing <br />Industries through <br />Innovation</h1>
-             <h1>Security <br />at most <br />Priority</h1>
-        </div> -->
-        <!-- <div class="heading1">
-          <h1>Next-Gen <br />Software for <br />Modern Enterprises</h1>
-          <h1>The Future of   <br />Tech: Predictions <br />and Perspectives</h1>
-          <h1>Connecting <br />Everything, Everywhere:  <br />The IoT Revolution</h1>
-          <h1>Revolutionizing <br />Industries through <br />Innovation</h1>
-          <h1>Ensuring Cybersecurity <br /> at the most <br />Priority</h1>
-        </div>
-     <script>
-      document.addEventListener('DOMContentLoaded', () => {
-          const headings = document.querySelectorAll('.heading1 h1');
-          let currentIndex = 0;
 
-          function showNextHeading() {
-              headings.forEach((heading, index) => {
-                  heading.classList.remove('active');
-                  if (index === currentIndex) {
-                      heading.classList.add('active');
-                  }
-              });
-              currentIndex = (currentIndex + 1) % headings.length;
-          }
-
-          showNextHeading();
-          setInterval(showNextHeading, 2500); // Change text every 3 seconds
-      });
-  </script> -->
-        <!-- slidertext -->
-        <!-- <div class="textContainer">
-            <div class="text">
-                Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale.
-            </div>
-            <div class="text">
-                Athens is the capital of Greece. It was also at the heart of Ancient Greece, a powerful civilization and empire. The city is still dominated by 5th-century BC landmarks, including the Acropolis, a hilltop citadel topped with ancient buildings like the colonnaded Parthenon temple. 
-            </div>
-            <div class="text">
-                Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait. Its Old City reflects cultural influences of the many empires that once ruled here. In the Sultanahmet district, the open-air, Roman-era Hippodrome was for centuries the site of chariot races, and Egyptian obelisks also remain.
-            </div>
-        </div> -->
-
-        <!-- Slider Images -->
-        <!-- <div class="imgContainer">
-            <img src="assets/images/home/1_1.png" alt="">
-        </div>
-        <div class="imgContainer">
-            <img src="assets/images/home/1_2_1.png" alt="">
-        </div>
-        <div class="imgContainer">
-            <img src="assets/images/home/1_4_1.png" alt="">
-        </div>
-        <div class="imgContainer">
-          <img src="assets/images/home/1_5.png" alt="">
-      </div>
-      <div class="imgContainer">
-        <img src="assets/images/home/1_6.png" alt="">
-    </div> -->
-
-    <!-- ram code start -->
-    <!-- <div class="background-image-container">
-      <div class="home-page-content" >
-        <div id="banner-content" class="row clearfix">
-          <div class="col-38">
-            <div class="section-heading">
-              <h1>Innovative Software Solutions for Modern Businesses</h1>
-              <h2>
-                Our team provides cutting-edge software development services tailored to your business needs. Scalable, secure, and designed to enhance productivity—perfect for enterprises of all sizes. Enjoy seamless integration and top-notch support for your commercial projects!
-              </h2>
-            </div>
-
-    
-            <a href="./contact.html" class="button">CONTACT US</a>
-            
-          </div>
-        </div>
-      </div> 
-    </div> -->
-    <!-- landing page start -->
-    <!-- <div class="home-page-main-container">
-      <div class="left-side-container">
-        <div class="col-38">
-          <div class="section-heading">
-            <h1>Innovative Software Solutions for Modern Businesses</h1>
-            <h2>
-              Our team provides cutting-edge software development services tailored to your business needs. Scalable, secure, and designed to enhance productivity—perfect for enterprises of all sizes. Enjoy seamless integration and top-notch support for your commercial projects!
-            </h2>
-          </div>
-
-  
-          <a href="./contact.html" class="button">CONTACT US</a>
-          
-        </div>
-      </div>
-      <div class="right-side-container">
-        <img class='homepage-image' id="imgMain" src="https://png.pngtree.com/png-vector/20240321/ourmid/pngtree-ai-robot-thinking-3d-pic-png-image_12182205.png" alt="">
-      </div>
-    </div> -->
     <!-- landing page corousal -->
-    <div class="carousel" style="margin-top: 70px;height: 100vh; ">
+<section class="section2">
+
+    <div class="carousel" style="height: 90vh;">
       <!-- list item -->
       <div class="list">
           <div class="item">
@@ -691,104 +596,13 @@ body {
       <!-- time running -->
       <div class="time"></div>
   </div>
-    <!-- landing page end -->
-    <!-- <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-      <!-- Left-side content -->
-      <!-- <div class="carousel-caption-left"> -->
-        <!-- <h1>Your Title Here</h1>
-        <p>Your description or additional content here.</p>
-        <a href="#" class="btn btn-primary">Learn More</a> -->
-        <!-- <div class="col-38">
-          <div class="section-heading">
-            <h1>Innovative Software Solutions for Modern Businesses</h1>
-            <h2>
-              Our team provides cutting-edge software development services tailored to your business needs. Scalable, secure, and designed to enhance productivity—perfect for enterprises of all sizes. Enjoy seamless integration and top-notch support for your commercial projects!
-            </h2>
-          </div>
-
-  
-          <a href="./contact.html" class="button">CONTACT US</a>
-          
-        </div>
-      </div>
-    </div> -->
-     
-  <script>
-    // const images =[
-    //       'https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?size=626&ext=jpg&ga=GA1.1.1819120589.1726012800&semt=ais_hybrid',
-    //       'https://imageio.forbes.com/specials-images/imageserve/645b3eca0059191fb09c02fa/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds',
-    //       'https://24vs.io/wp-content/uploads/2021/03/Slide4.jpeg',
-    //       'https://cdn.prod.website-files.com/61845f7929f5aa517ebab941/6440f9477c2a321f0dd6ab61_How%20Artificial%20Intelligence%20(AI)%20Is%20Used%20In%20Biometrics.jpg'
-    //   ];
-  // const images=[
     
-  //   'https://www.pngkey.com/png/full/96-967577_ai-artificial-intelligence-transparent-background.png',
-  //   'https://static.vecteezy.com/system/resources/thumbnails/022/587/498/small/technology-ai-artificial-intelligence-ship-in-brain-hi-tech-smart-brain-free-png.png',
-  //   'https://png.pngtree.com/png-vector/20240321/ourmid/pngtree-ai-robot-thinking-3d-pic-png-image_12182205.png'
-  // ]
-  //   let currentIndex = 0;
-  
-  //   function changeBackgroundImage() {
-  //     const container = document.getElementById('imgMain');
-  //     currentIndex = (currentIndex + 1) % images.length;
-  //     container.src=images[currentIndex]
-      // container.style.backgroundImage = `url(${images[currentIndex]})`;
-      // container.style.backgroundPosition = 'center';
-      // container.style.backgroundRepeat = 'no-repeat';
-      // container.style.backgroundAttachment = 'fixed';
+</section>
+<!-- landing page end -->
 
-  //     background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: center;
-
-  //   }
-  //   setInterval(changeBackgroundImage,5000)
-  
-  // </script>
-  
-    <!-- ram code end -->
-
-
-    </div>
-    <div class="icons">
-     <a href="https://www.instagram.com/nexyzoinfo/">   <i class="fa-brands fa-instagram"></i></a>
-     <a href="https://www.facebook.com/Nexyzo-Technologies-Pvt-Ltd-118791317842693"> <i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.linkedin.com/company/nexyzo-technologies-pvt-ltd/"> <i class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://twitter.com/NexyzoInfo"> <i class="fa-brands fa-twitter"></i></a>
-    </div>
-    
-    <div class="container">
-      
-      <div class="field">
-        <div class="mouse">
-        </div>
-        
-      </div>
-      
-    </div>
-</div>
 <!-- why choose us section -->
 
-<section>
+<section class="why-choose-us-section-container">
   <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: white;">
     <div class="container py-5">
       <div
@@ -968,7 +782,7 @@ body {
 
     <!-- modern and innovative section -->
 
-  <section>
+  <!-- <section>
     <div class="cont2 pb-4">
      
       <div class="centered pt-4 mb-4">
@@ -984,7 +798,7 @@ body {
             <p>Custom software development provides personalized, scalable, and efficient solutions designed to meet your specific business goals, streamline operations, and enhance overall performance.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv2">
-            <!-- <p>02</p> -->
+            
             <i class="fas fa-mobile-alt  fa-3x" style="color:orangered ;"></i>
 
 
@@ -992,56 +806,56 @@ body {
             <p>Mobile applications deliver seamless, on-the-go access to your services, empowering users with intuitive interfaces and enhanced functionality tailored to their needs.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv3">
-            <!-- <p>03</p> -->
+          
             <i class="fas fa-shopping-cart  fa-3x" style="color:orangered ;"></i>
 
             <h2>E-commerce</h2>
             <p>E-commerce solutions streamline the shopping experience, enabling businesses to reach a global audience with secure, scalable platforms that drive sales and customer engagement.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv4">
-            <!-- <p>04</p> -->
+          
             <i class="fas fa-users  fa-3x" style="color:orangered ;"></i>
 
             <h2>ERP/CRM</h2>
             <p>Transform your business with our tailored ERP/CRM solutions, designed to streamline operations, enhance customer relationships, and drive growth with powerful, scalable features.</p>
           </div>
           <div class="c-left add-border fa-3x" id="hoverDiv5">
-            <!-- <p>05</p> -->
+           
             <i class="fas fa-brain" style="color:orangered ;"></i>
 
             <h2>AI & ML</h2>
             <p>Unlock new possibilities with our AI & ML solutions, leveraging cutting-edge technology to drive innovation, optimize processes, and gain actionable insights for strategic decision-making.</p>
           </div>
           <div class="c-right add-border fa-3x" id="hoverDiv6">
-            <!-- <p>06</p> -->
+           
             <i class="fas fa-flag" style="color:orangered ;"></i>
 
             <h2>Branding Solutions</h2>
             <p>Elevate your brand with our comprehensive branding solutions, designed to create a strong identity, engage your audience, and drive lasting impact through strategic design and messaging.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv7">
-            <!-- <p>07</p> -->
+           
             <i class="fas fa-cube fa-3x" style="color:orangered ;"></i>
 
             <h2>Blockchain</h2>
             <p>Revolutionize your business with our blockchain solutions, offering secure, transparent, and efficient transactions while enhancing trust and integrity across your digital operations.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv8">
-            <!-- <p>08</p> -->
+            
             <i class="fas fa-vr-cardboard fa-3x" style="color:orangered ;"></i>
 
             <h2>Metaverse</h2>
             <p>Step into the future with our Metaverse solutions, creating immersive virtual experiences that transform how you connect, collaborate, and engage in a digital world.</p>
           </div>
           <div class="c-left add-border" id="hoverDiv9">
-            <!-- <p>09</p> -->
+           
             <i class="fas fa-cogs  fa-3x" style="color:orangered ;"></i>
 
             <h2>Industrial Automation</h2>
             <p>Enhance efficiency and productivity with our industrial automation solutions, designed to streamline operations, reduce downtime, and drive innovation through advanced technology and intelligent systems.</p>
           </div>
           <div class="c-right add-border" id="hoverDiv10">
-            <!-- <p>10</p> -->
+          
             <i class="fas fa-users fa-3x" style="color:orangered ;"></i>
 
             <h2>Staff Augmentation</h2>
@@ -1050,34 +864,146 @@ body {
         </div>
       </div>
     </div>
-  </section>
-  <script>
-    // Get all 10 divs by their ID
-    const hoverDivs = [
-        document.getElementById('hoverDiv1'),
-        document.getElementById('hoverDiv2'),
-        document.getElementById('hoverDiv3'),
-        document.getElementById('hoverDiv4'),
-        document.getElementById('hoverDiv5'),
-        document.getElementById('hoverDiv6'),
-        document.getElementById('hoverDiv7'),
-        document.getElementById('hoverDiv8'),
-        document.getElementById('hoverDiv9'),
-        document.getElementById('hoverDiv10')
-    ];
+  </section> -->
 
-    // Add hover effect to each div
-    hoverDivs.forEach(div => {
-        div.addEventListener('mouseover', () => {
-          // div.classList.remove('add-border')
-            div.classList.add('shadow-lg', 'p-3', 'mb-5', 'bg-body-tertiary', 'rounded');
-        });
-        div.addEventListener('mouseout', () => {
-          // div.classList.add('add-border')
-            div.classList.remove('shadow-lg', 'p-3', 'mb-5', 'bg-body-tertiary', 'rounded');
-        });
-    });
-</script>
+  <section class="trail">
+    <style>
+      /* .add-border {
+        
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+} */
+.add-border {
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    margin-bottom: 20px; /* Add gap between each section */
+}
+
+.add-border:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Responsive Font Sizes */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .add-border {
+        margin-bottom: 20px;
+    }
+}
+
+    </style>
+  <section>
+    <div class="container cont2 pb-4">
+      <div class="centered pt-4 mb-4">
+        <h1 class="text-center" style="font-size: 40px;">Modern And Intuitive <br> Software Solutions</h1>
+        <br>
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv1">
+            <div class="add-border p-3">
+              <i class="fas fa-laptop-code fa-3x" style="color:orangered;"></i>
+              <h2>Custom Software Development</h2>
+              <p>Custom software development provides personalized, scalable, and efficient solutions designed to meet your specific business goals.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv2">
+            <div class="add-border p-3">
+              <i class="fas fa-mobile-alt fa-3x" style="color:orangered;"></i>
+              <h2>Mobile Applications</h2>
+              <p>Mobile applications deliver seamless, on-the-go access to your services, empowering users with intuitive interfaces and enhanced functionality.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv3">
+            <div class="add-border p-3">
+              <i class="fas fa-shopping-cart fa-3x" style="color:orangered;"></i>
+              <h2>E-commerce</h2>
+              <p>E-commerce solutions streamline the shopping experience, enabling businesses to reach a global audience with secure platforms.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv4">
+            <div class="add-border p-3">
+              <i class="fas fa-users fa-3x" style="color:orangered;"></i>
+              <h2>ERP/CRM</h2>
+              <p>Transform your business with tailored ERP/CRM solutions, designed to streamline operations, enhance customer relationships, and drive growth.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv5">
+            <div class="add-border p-3">
+              <i class="fas fa-brain fa-3x" style="color:orangered;"></i>
+              <h2>AI & ML</h2>
+              <p>Unlock new possibilities with AI & ML solutions, leveraging cutting-edge technology to optimize processes and drive innovation.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv6">
+            <div class="add-border p-3">
+              <i class="fas fa-flag fa-3x" style="color:orangered;"></i>
+              <h2>Branding Solutions</h2>
+              <p>Elevate your brand with our comprehensive branding solutions, designed to create a strong identity and engage your audience effectively.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv7">
+            <div class="add-border p-3">
+              <i class="fas fa-cube fa-3x" style="color:orangered;"></i>
+              <h2>Blockchain</h2>
+              <p>Revolutionize your business with secure, transparent blockchain solutions that enhance trust and integrity in digital operations.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv8">
+            <div class="add-border p-3">
+              <i class="fas fa-vr-cardboard fa-3x" style="color:orangered;"></i>
+              <h2>Metaverse</h2>
+              <p>Step into the future with Metaverse solutions, creating immersive virtual experiences to connect and engage in a digital world.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv9">
+            <div class="add-border p-3">
+              <i class="fas fa-cogs fa-3x" style="color:orangered;"></i>
+              <h2>Industrial Automation</h2>
+              <p>Enhance efficiency and productivity with industrial automation solutions designed to streamline operations and reduce downtime.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4" id="hoverDiv10">
+            <div class="add-border p-3">
+              <i class="fas fa-users fa-3x" style="color:orangered;"></i>
+              <h2>Staff Augmentation</h2>
+              <p>Boost your team's capabilities with our staff augmentation services, delivering expertise to achieve your business goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+  </section>
+ 
   <!-- modern and innovative section end -->
   
   
@@ -1109,12 +1035,19 @@ body {
 
 
 <!-- image section -->
-  <section class="hero fadeIn" id="">
+  <!-- <section class="hero fadeIn" id="">
     <img src="https://nexyzo.com/wp-content/uploads/2023/04/Nexyzo_logo_Variants_Final-01-removebg-preview-1.png" />
 
     <h4>YOUR TRUSTED TECHNOLOGY PARTNER</h4>
 
-  </section>
+  </section> -->
+  <section class="hero fadeIn text-center" style="background-color: #f8f9fa;">
+    <img src="https://nexyzo.com/wp-content/uploads/2023/04/Nexyzo_logo_Variants_Final-01-removebg-preview-1.png" 
+         class="img-fluid mb-3" alt="Nexyzo Logo" />
+
+    <h4 class="display-4">YOUR TRUSTED TECHNOLOGY PARTNER</h4>
+</section>
+
   <!-- image section end -->
   <!-- <section>
 
@@ -1874,7 +1807,7 @@ $(function() {
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script>
+<!-- <script>
   $(function() {
       $(window).on("scroll", function() {
           if($(window).scrollTop() > 50) {
@@ -1885,7 +1818,7 @@ $(function() {
           }
       });
   });
-  </script>
+  </script> -->
   <script>
     //step 1: get DOM
 let nextDom = document.getElementById('next');
